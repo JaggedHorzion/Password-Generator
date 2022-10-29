@@ -35,4 +35,4 @@ const generatedPasswordOne = generateRandomPasswordOne()
 const generatedPasswordTwo = generateRandomPasswordTwo()
 
 document.getElementById("rectangleOne").textContent = generatedPasswordOne
-document.getElementById("rectangleTwo").textContent = generatedPasswordOne
+document.getElementById("rectangleTwo").textContent = generatedPasswordTwo
