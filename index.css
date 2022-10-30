@@ -69,7 +69,14 @@ span {
     width: 211px;
     height: 39px;
     background: #273548;
-    border-radius: 6px; 
+    border-radius: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 40px;
+    color: #FFFFFF; 
+    text-align: center;
 }
 
 /* #rectangleOne {
