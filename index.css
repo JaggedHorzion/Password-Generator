@@ -37,7 +37,7 @@ span {
 }
 
 .btn {
-    padding: 9px 17px 9px 15px;
+    padding: 9px 15px 9px 15px;
     width: 191px;
     height: 42px;
     margin-top: 50px;
@@ -51,6 +51,7 @@ span {
     line-height: 24px;
     color: #FFFFFF;
 }
+
 
 #line {
     width: 446px;
