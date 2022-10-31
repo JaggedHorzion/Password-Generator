@@ -8,7 +8,7 @@ function getRandomCharacter() {
     return characters[randomChar]
 }
 
-function generateRandomPasswordOne() {
+ function generateRandomPasswordOne() {
     let randomPasswordOne = ""
     for (let i = 0; i < passwordLength; i++) {
         randomPasswordOne += getRandomCharacter()         
@@ -24,10 +24,11 @@ function generateRandomPasswordTwo() {
     return randomPasswordTwo
 }
 
-const GenerateButton = document.getElementById("btnGen")
+const startBtn = document.getElementById("btnGen")
 
-GenerateButton.addEventListener("click", function(){
-    
+startBtn.addEventListener("click", function(){
+ return location.reload();   
+
   })
 
 const generatedPasswordOne = generateRandomPasswordOne()
