@@ -8,7 +8,7 @@ function getRandomCharacter() {
     return characters[randomChar]
 }
 
-function generateRandomPassword() {
+function generateRandomPasswords() {
     let randomPassword = ""
     for (let i = 0; i < passwordLength; i++) {
         randomPassword += getRandomCharacter()         
@@ -16,8 +16,8 @@ function generateRandomPassword() {
     return randomPassword
 }
 
-const generatedPasswordOne = generateRandomPassword()
-const generatedPasswordTwo = generateRandomPassword()
+const generatedPasswordOne = generateRandomPasswords()
+const generatedPasswordTwo = generateRandomPasswords()
 
 console.log("Here is two random passwords: ", generatedPasswordOne + " " + generatedPasswordTwo)
 
