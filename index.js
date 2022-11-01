@@ -8,33 +8,18 @@ function getRandomCharacter() {
     return characters[randomChar]
 }
 
- function generateRandomPasswordOne() {
-    let randomPasswordOne = ""
+function generateRandomPassword() {
+    let randomPassword = ""
     for (let i = 0; i < passwordLength; i++) {
-        randomPasswordOne += getRandomCharacter()         
+        randomPassword += getRandomCharacter()         
     }
-    return randomPasswordOne
+    return randomPassword
 }
 
-function generateRandomPasswordTwo() {
-    let randomPasswordTwo = ""
-    for (let i = 0; i < passwordLength; i++) {
-        randomPasswordTwo += getRandomCharacter()         
-    }
-    return randomPasswordTwo
-}
+const generatedPasswordOne = generateRandomPassword()
+const generatedPasswordTwo = generateRandomPassword()
 
-const startBtn = document.getElementById("btnGen")
+console.log("Here is two random passwords: ", generatedPasswordOne + " " + generatedPasswordTwo)
 
-startBtn.addEventListener("click", function(){
- return location.reload();   
-
-  })
-
-const generatedPasswordOne = generateRandomPasswordOne()
-const generatedPasswordTwo = generateRandomPasswordTwo()
-
-document.getElementById("rectangleOne").textContent = generatedPasswordOne
-document.getElementById("rectangleTwo").textContent = generatedPasswordTwo
 
 //console.log(alert('Oh, you clicked me!'))
