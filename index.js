@@ -19,7 +19,27 @@ function generateRandomPasswords() {
 const generatedPasswordOne = generateRandomPasswords()
 const generatedPasswordTwo = generateRandomPasswords()
 
-console.log("Here is two random passwords: ", generatedPasswordOne + " " + generatedPasswordTwo)
+document.getElementById("rectangleOne").textContent = generatedPasswordOne
+document.getElementById("rectangleTwo").textContent = generatedPasswordTwo
 
+buttonGen = document.getElementById("btnGen")
 
-//console.log(alert('Oh, you clicked me!'))
+buttonGen.addEventListener("click", function(){
+    location.reload();
+  });
+
+  function clipboardone() {
+    
+    navigator.clipboard.writeText(generatedPasswordOne);
+   
+    alert("Password Sucessfully Copied!");
+    
+  }
+
+  function clipboardtwo() {
+    
+    navigator.clipboard.writeText(generatedPasswordTwo);
+   
+    alert("Password Sucessfully Copied!");
+    
+  }
