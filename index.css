@@ -80,41 +80,6 @@ span {
     text-align: center;
 }
 
-/* #rectangleOne {
-    margin-top: 20px;
-    width: 211px;
-    height: 39px;
-    background: #273548;
-    border-radius: 6px;
-}
-
-#rectangleTwo {
-    margin-top: 20px;
-    width: 211px;
-    height: 39px;
-    background: #273548;
-    border-radius: 6px;
-
-} */
-
-/* #btnCopyOne {
-    margin-top: 20px;
-    width: 211px;
-    height: 39px;
-    background: #273548;
-    border-radius: 6px;
-    color: white;
-    border-color: #FFFFFF;
-}
-
-#btnCopyTwo {
-    margin-top: 20px;
-    width: 211px;
-    height: 39px;
-    background: #273548;
-    border-radius: 6px;
-    color: white;
-    border-color: #FFFFFF; */
 
 #CopyButtons {
         display: flex;
