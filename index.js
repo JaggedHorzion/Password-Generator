@@ -3,30 +3,25 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 let passwordLength = 12
 
-function getRandomCharacter() {
+const buttonGen = document.getElementById("btnGen")
+
+function renderPasswords() {
+  let randomPassword = ""
+  for (let i = 0; i < passwordLength; i++) {
     let randomChar = Math.floor(Math.random() * characters.length)
-    return characters[randomChar]
+      randomPassword += characters[randomChar]    
+  }
+  return randomPassword
 }
 
 function generateRandomPasswords() {
-    let randomPassword = ""
-    for (let i = 0; i < passwordLength; i++) {
-        randomPassword += getRandomCharacter()         
-    }
-    return randomPassword
-}
-
-const generatedPasswordOne = generateRandomPasswords()
-const generatedPasswordTwo = generateRandomPasswords()
+const generatedPasswordOne = renderPasswords()
+const generatedPasswordTwo = renderPasswords()
 
 document.getElementById("rectangleOne").textContent = generatedPasswordOne
 document.getElementById("rectangleTwo").textContent = generatedPasswordTwo
+}
 
-buttonGen = document.getElementById("btnGen")
-
-buttonGen.addEventListener("click", function(){
-    location.reload();
-  });
 
   function clipboardone() {
     
