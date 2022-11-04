@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background-color: #1F2937;
+    
 }
 
 .container {
@@ -94,4 +95,10 @@ span {
     border-radius: 6px;
     color: white;
     border-color: #FFFFFF;
+}
+
+@media only screen and (max-width: 600px) {
+   body {
+    background-color: aqua;
+    }
 }
