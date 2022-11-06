@@ -24,7 +24,8 @@ document.getElementById("rectangleTwo").textContent = generatedPasswordTwo
 
 
   function clipboardone() {
-    
+    const generatedPasswordOne = renderPasswords()
+    document.getElementById("rectangleOne").textContent = generatedPasswordOne
     navigator.clipboard.writeText(generatedPasswordOne);
    
     alert("Password Sucessfully Copied!");
@@ -32,7 +33,8 @@ document.getElementById("rectangleTwo").textContent = generatedPasswordTwo
   }
 
   function clipboardtwo() {
-    
+    const generatedPasswordTwo = renderPasswords()
+    document.getElementById("rectangleTwo").textContent = generatedPasswordTwo
     navigator.clipboard.writeText(generatedPasswordTwo);
    
     alert("Password Sucessfully Copied!");
